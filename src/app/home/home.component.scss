@@ -1,0 +1,57 @@
+@import '../../styles.scss';
+
+.main-product-img-wrapper {
+    position: relative;
+}
+
+.view-360-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.size-spec {
+    width: 85px;
+    height: 85px;
+}
+
+.selected-size-spec {
+    background-color: #ECECEC;
+}
+
+.color-item {
+    width: 80px;
+    height: 80px;
+}
+
+.selected-color {
+    border: 1px solid $secondaryColor;
+}
+
+.quantity-controls {
+    background-color: #F5F5F5;
+}
+
+.quantity-decrease,
+.quantity-increase {
+    width: 38px;
+    height: 38px;
+}
+
+.similar-product {
+    box-shadow: 0px 0px 5px #00000026;
+    border: 0.76px solid #ECECEC;
+    //min-height: 540px;
+}
+
+.similar-product-img {
+    position: relative;
+}
+
+.similar-product-logo {
+    width: 50px;
+}
+
+.similar-product-rate .rate-star img {
+    width: 16px;
+}

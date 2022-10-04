@@ -1,0 +1,26 @@
+$primaryColor: #FFF200;
+$secondaryColor: #542E90;
+
+.text-mine-primary {
+    color: $primaryColor;
+}
+
+.text-mine-secondary {
+    color: $secondaryColor;
+}
+
+.bg-mine-primary {
+    background-color: $primaryColor;
+}
+
+.bg-mine-secondary {
+    background-color: $secondaryColor;
+}
+
+.rounded-mine {
+    border-radius: 10px;
+}
+
+.crs-pnt {
+    cursor: pointer;
+}

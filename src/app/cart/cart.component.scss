@@ -1,0 +1,18 @@
+section.cart-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+.cart-panel {
+    box-shadow: -1.78px -1.78px 4px #00000040;
+}
+
+.cart-item {
+    border: 1px solid #ECECEC;
+}

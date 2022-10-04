@@ -1,0 +1,396 @@
+<nav class="py-3">
+    <div class="container">
+        <ul class="list-unstyled d-flex fw-bold">
+            <li><span class="text-decoration-underline">Men</span> /</li>
+            <li class="ps-2"><span class="text-decoration-underline">Clothing</span> /</li>
+            <li class="ps-2"><span class="text-decoration-underline">Tops</span> /</li>
+            <li class="ps-2"><span class="text-decoration-underline">Adidas</span> /</li>
+            <li class="ps-2">Adidas Black T-Shirt</li>
+        </ul>
+    </div>
+    <hr class="hr">
+</nav>
+
+<section class="product-wrapper py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 rounded-mine p-4">
+                <div class="main-product-img-wrapper">
+                    <div class="view-360-icon p-3 rounded-mine bg-white crs-pnt">
+                        <img src="../../assets/360-icon.png" alt="360 View Button">
+                    </div>
+                    <img src="../../assets/product-main-image.webp" alt="Product Image" class="w-100 rounded-mine">
+                </div>
+                <div class="slider py-4">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div class="left-arrow">
+                            <img src="../../assets/arrow-left-icon.png">
+                        </div>
+                        <div class="slider-img">
+                            <img src="../../assets/slider-img-one.png" alt="Slider Image" class="w-100">
+                        </div>
+                        <div class="slider-img">
+                            <img src="../../assets/slider-img-two.png" alt="Slider Image" class="w-100">
+                        </div>
+                        <div class="slider-img">
+                            <img src="../../assets/slider-img-three.png" alt="Slider Image" class="w-100">
+                        </div>
+                        <div class="slider-img">
+                            <img src="../../assets/slider-img-four.png" alt="Slider Image" class="w-100">
+                        </div>
+                        <div class="right-arrow">
+                            <img src="../../assets/arrow-right-icon.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 py-4">
+                <div class="product-logo">
+                    <img src="../../assets/adidas-logo.png" alt="Product Logo">
+                </div>
+                <h5 class="fw-bold product-title w-50 pt-4 pb-1">{{ product.title }}</h5>
+                <h5 class="product-category fw-bold text-muted pb-3">{{ product.category }}</h5>
+                <div class="rate">
+                    <div class="d-flex align-items-center">
+                        <div class="rate-stars d-flex align-items-center">
+                            <div class="rate-star p-1">
+                                <img src="../../assets/rate-star.png" alt="Rate Star">
+                            </div>
+                            <div class="rate-star p-1">
+                                <img src="../../assets/rate-star.png" alt="Rate Star">
+                            </div>
+                            <div class="rate-star p-1">
+                                <img src="../../assets/rate-star.png" alt="Rate Star">
+                            </div>
+                            <div class="rate-star p-1">
+                                <img src="../../assets/rate-star.png" alt="Rate Star">
+                            </div>
+                            <div class="rate-star p-1">
+                                <img src="../../assets/white-rate-star.png" alt="Rate Star">
+                            </div>
+                        </div>
+                        <div class="rate-text">
+                            <p class="fw-bold p-0 m-0 px-3">{{ product.rate }} of 5</p>
+                        </div>
+                        <div class="rate-count">
+                            <p class="fw-bold p-0 m-0 px-3 text-muted">{{ product.reviews }} Rates</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="price py-2">
+                    <div class="d-flex align-items-center">
+                        <h3 class="text-mine-secondary fw-bold after-price">{{ product.after_price }}</h3>
+                        <h5 class="text-mine-secondary px-2">LE</h5>
+                        <h5 class="text-muted px-4 text-decoration-line-through">{{ product.before_price }} LE</h5>
+                        <h6 class="discount bg-mine-primary px-2 py-1">{{ product.discount }}% Off</h6>
+                    </div>
+                </div>
+                <hr class="hr">
+                <div class="size">
+                    <h5 class="fw-bold pb-3">Size</h5>
+                    <div class="size-specs d-flex">
+                        <div
+                            class="size-spec mx-2 p-2 border border-1 d-flex justify-content-center align-items-center rounded-circle crs-pnt">
+                            <p class="fw-bold text-mine-secondary p-0 m-0">Small</p>
+                        </div>
+                        <div
+                            class="size-spec mx-2 p-2 border border-1 d-flex justify-content-center align-items-center rounded-circle crs-pnt">
+                            <p class="fw-bold text-mine-secondary p-0 m-0">Medium</p>
+                        </div>
+                        <div
+                            class="size-spec mx-2 p-2 selected-size-spec border border-1 d-flex justify-content-center align-items-center rounded-circle crs-pnt">
+                            <p class="fw-bold p-0 m-0">Large</p>
+                        </div>
+                        <div
+                            class="size-spec mx-2 p-2 border border-1 d-flex justify-content-center align-items-center rounded-circle crs-pnt">
+                            <p class="fw-bold text-mine-secondary p-0 m-0">X Large</p>
+                        </div>
+                        <div
+                            class="size-spec mx-2 p-2 border border-1 d-flex justify-content-center align-items-center rounded-circle crs-pnt">
+                            <p class="fw-bold text-mine-secondary p-0 m-0">XX Large</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr my-4">
+                <div class="color">
+                    <h5 class="fw-bold pb-3">Color</h5>
+                    <div class="colors d-flex">
+                        <div class="color-item rounded-circle selected-color">
+                            <img src="../../assets/color-item-one.png" class="w-100" alt="Color Choice">
+                        </div>
+                        <div class="color-item rounded-circle mx-4">
+                            <img src="../../assets/color-item-two.png" class="w-100" alt="Color Choice">
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr my-4">
+                <div class="quantity">
+                    <h5 class="fw-bold pb-3">Quantity</h5>
+                    <div class="quantity-controls p-2 rounded-pill border border-1 d-inline-block">
+                        <div class="d-flex align-items-center">
+                            <div (click)="decreaseQuantity()"
+                                class="quantity-decrease me-4 crs-pnt bg-mine-primary d-flex justify-content-center align-items-center p-3 rounded-circle">
+                                <img src="../../assets/quantity-decrease.png" alt="Decrease Quantity">
+                            </div>
+                            <div class="quantity-value mx-5">
+                                <p class="p-0 m-0 text-mine-secondary fw-bold">{{ quantity }}</p>
+                            </div>
+                            <div (click)="increaseQuantity()"
+                                class="quantity-increase ms-4 crs-pnt bg-mine-primary d-flex justify-content-center align-items-center p-3 rounded-circle">
+                                <img src="../../assets/quantity-increase.png" alt="Increase Quantity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="confirm-btns py-4">
+                        <div class="row">
+                            <div class="col-md-6 pe-md-4 py-3 py-md-0">
+                                <a (click)="addToCart(product)"
+                                    class="crs-pnt text-decoration-none bg-mine-secondary fw-bold d-inline-block text-center py-3 rounded-pill w-100 text-white">Add
+                                    To Cart</a>
+                            </div>
+                            <div class="col-md-6 ps-md-4 py-3 py-md-0">
+                                <a href="#"
+                                    class="text-decoration-none bg-mine-primary fw-bold d-inline-block text-center py-3 rounded-pill w-100 text-dark">Pickup
+                                    From Store</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="similar-products-wrapper py-5">
+    <div class="container">
+        <h2 class="text-mine-secondary fw-bold">Similar Products</h2>
+        <p class="lead">You may like these products also</p>
+        <div class="row">
+            <div class="col-md-3 col-6 p-3">
+                <div class="similar-product rounded h-100">
+                    <div class="similar-product-img p-2">
+                        <div class="view-360-icon p-1 rounded-mine bg-white crs-pnt">
+                            <img src="../../assets/360-icon-sm.png" alt="360 View Button">
+                        </div>
+                        <img src="../../assets/similar-product-one.png" alt="Similar Product Image" class="w-100">
+                    </div>
+                    <div class="similar-product-info py-2 px-3">
+                        <h5 class="fw-bold">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h5>
+                        <div class="row py-3 align-items-center">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center text-mine-secondary">
+                                    <h4 class="fw-bold">9,999</h4>
+                                    <h6 class="ps-2">LE</h6>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-decoration-line-through text-muted">
+                                        <span class="fw-bold">9,999</span>
+                                        LE
+                                    </h6>
+                                    <h6 class="bg-mine-primary px-md-3 px-1 py-1">50%</h6>
+                                </div>
+                            </div>
+                            <div class="col-6 text-end">
+                                <img src="../../assets/adidas-logo.png" alt="Similar Product Logo"
+                                    class="similar-product-logo">
+                            </div>
+                        </div>
+                        <div class="similar-product-rate d-flex align-items-center justify-content-center">
+                            <div class="rate-stars d-flex align-items-center px-2">
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/white-rate-star.png" alt="Rate Star">
+                                </div>
+                            </div>
+                            <h6 class="fw-bold py-1 px-2 m-0">4.2 of 5</h6>
+                        </div>
+                        <div class="similar-product-store pt-3">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <h6 class="px-1">Pickup From: </h6>
+                                <h6 class="fw-bold px-1">Genena Mall</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 p-3">
+                <div class="similar-product rounded h-100">
+                    <div class="similar-product-img p-2">
+                        <div class="view-360-icon p-1 rounded-mine bg-white crs-pnt">
+                            <img src="../../assets/360-icon-sm.png" alt="360 View Button">
+                        </div>
+                        <img src="../../assets/similar-product-two.png" alt="Similar Product Image" class="w-100">
+                    </div>
+                    <div class="similar-product-info py-2 px-3">
+                        <h5 class="fw-bold">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h5>
+                        <div class="row py-3 align-items-center">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center text-mine-secondary">
+                                    <h4 class="fw-bold">9,999</h4>
+                                    <h6 class="ps-2">LE</h6>
+                                </div>
+                            </div>
+                            <div class="col-6 text-end">
+                                <img src="../../assets/adidas-logo.png" alt="Similar Product Logo"
+                                    class="similar-product-logo">
+                            </div>
+                        </div>
+                        <div class="similar-product-rate d-flex align-items-center justify-content-center">
+                            <div class="rate-stars d-flex align-items-center px-2">
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/white-rate-star.png" alt="Rate Star">
+                                </div>
+                            </div>
+                            <h6 class="fw-bold py-1 px-2 m-0">4.2 of 5</h6>
+                        </div>
+                        <div class="similar-product-store pt-3">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <h6 class="px-1">Pickup From: </h6>
+                                <h6 class="fw-bold px-1">Genena Mall</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 p-3">
+                <div class="similar-product rounded h-100">
+                    <div class="similar-product-img p-2">
+                        <div class="view-360-icon p-1 rounded-mine bg-white crs-pnt">
+                            <img src="../../assets/360-icon-sm.png" alt="360 View Button">
+                        </div>
+                        <img src="../../assets/similar-product-three.png" alt="Similar Product Image" class="w-100">
+                    </div>
+                    <div class="similar-product-info py-2 px-3">
+                        <h5 class="fw-bold">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h5>
+                        <div class="row py-3 align-items-center">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center text-mine-secondary">
+                                    <h4 class="fw-bold">9,999</h4>
+                                    <h6 class="ps-2">LE</h6>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-decoration-line-through text-muted">
+                                        <span class="fw-bold">9,999</span>
+                                        LE
+                                    </h6>
+                                    <h6 class="bg-mine-primary px-md-3 px-1 py-1">30%</h6>
+                                </div>
+                            </div>
+                            <div class="col-6 text-end">
+                                <img src="../../assets/adidas-logo.png" alt="Similar Product Logo"
+                                    class="similar-product-logo">
+                            </div>
+                        </div>
+                        <div class="similar-product-rate d-flex align-items-center justify-content-center">
+                            <div class="rate-stars d-flex align-items-center px-2">
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/white-rate-star.png" alt="Rate Star">
+                                </div>
+                            </div>
+                            <h6 class="fw-bold py-1 px-2 m-0">4.2 of 5</h6>
+                        </div>
+                        <div class="similar-product-store pt-3">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <h6 class="px-1">Pickup From: </h6>
+                                <h6 class="fw-bold px-1">Genena Mall</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 p-3">
+                <div class="similar-product rounded h-100">
+                    <div class="similar-product-img p-2">
+                        <div class="view-360-icon p-1 rounded-mine bg-white crs-pnt">
+                            <img src="../../assets/360-icon-sm.png" alt="360 View Button">
+                        </div>
+                        <img src="../../assets/similar-product-four.png" alt="Similar Product Image" class="w-100">
+                    </div>
+                    <div class="similar-product-info py-2 px-3">
+                        <h5 class="fw-bold">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h5>
+                        <div class="row py-3 align-items-center">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center text-mine-secondary">
+                                    <h4 class="fw-bold">9,999</h4>
+                                    <h6 class="ps-2">LE</h6>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h6 class="text-decoration-line-through text-muted">
+                                        <span class="fw-bold">9,999</span>
+                                        LE
+                                    </h6>
+                                    <h6 class="bg-mine-primary px-md-3 px-1 py-1">70%</h6>
+                                </div>
+                            </div>
+                            <div class="col-6 text-end">
+                                <img src="../../assets/adidas-logo.png" alt="Similar Product Logo"
+                                    class="similar-product-logo">
+                            </div>
+                        </div>
+                        <div class="similar-product-rate d-flex align-items-center justify-content-center">
+                            <div class="rate-stars d-flex align-items-center px-2">
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/rate-star.png" alt="Rate Star">
+                                </div>
+                                <div class="rate-star">
+                                    <img src="../../assets/white-rate-star.png" alt="Rate Star">
+                                </div>
+                            </div>
+                            <h6 class="fw-bold py-1 px-2 m-0">4.2 of 5</h6>
+                        </div>
+                        <div class="similar-product-store pt-3">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <h6 class="px-1">Pickup From: </h6>
+                                <h6 class="fw-bold px-1">Genena Mall</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

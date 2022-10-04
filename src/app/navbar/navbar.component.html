@@ -1,0 +1,212 @@
+<nav class="navbar first-navbar navbar-expand-lg navbar-light bg-mine-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../../assets/burger-icon.png" class="pe-4" alt="Menu Icon">
+            <img src="../../assets/first-navbar-logo.png" alt="Yeshtery Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#firstNavbar"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="firstNavbar">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item me-5">
+                    <a class="nav-link" href="#">
+                        <span class="pe-3"><</span>
+                                Valentine's Day Offers! Buy Two Get One Free
+                                <span class="fw-bold text-decoration-underline">Shop Now</span>
+                                <span class="ps-3">></span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        <div class="-nav-icon">
+                            <img src="../../assets/phone-icon.png" alt="Contact Icon">
+                        </div>
+                        <div class="nav-text">
+                            <span class="fw-bold px-2">Contact Us</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        <div class="-nav-icon">
+                            <img src="../../assets/cart-icon.png" alt="Contact Icon">
+                        </div>
+                        <div class="nav-text">
+                            <span class="fw-bold px-2">Track Order</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" href="#">
+                        <div class="-nav-icon">
+                            <img src="../../assets/location-icon.png" alt="Contact Icon">
+                        </div>
+                        <div class="nav-text">
+                            <span class="fw-bold px-2">Find A Store</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar second-navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+        <a class="navbar-brand">
+            <div class="search-icon-wrapper">
+                <img src="../../assets/search-icon.png" alt="Search Icon">
+            </div>
+            <input type="text" class="rounded-pill border border-1 ps-5 py-2 fw-bold" placeholder="Search">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secondNavbar"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="secondNavbar">
+            <ul class="navbar-nav w-100 mx-auto mb-2 mb-lg-0 d-flex align-items-center">
+                <div class="d-flex justify-content-around w-100">
+                    <div class="adidas-logo-wrapper">
+                        <li class="nav-item me-5">
+                            <a class="nav-link" href="#">
+                                <img src="../../assets/adidas-logo.png" alt="Adidas Logo">
+                            </a>
+                        </li>
+                    </div>
+                    <div class="nav-items-wrapper d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center crs-pnt" (click)="openedCart = !openedCart">
+                                <div class="nav-icon position-relative">
+                                    <img src="../../assets/plastic-cart-icon.png" alt="Cart Icon">
+                                    <div class="badge cart-items-count bg-mine-primary rounded-circle">{{ cartItems.length }}</div>
+                                </div>
+                                <div class="nav-text">
+                                    <span class="fw-bold px-2">Cart</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                <div class="nav-icon">
+                                    <img src="../../assets/heart-icon.png" alt="Heart Icon">
+                                </div>
+                                <div class="nav-text">
+                                    <span class="fw-bold px-2">Wishlist</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                <div class="nav-icon">
+                                    <img src="../../assets/person-logo.png" alt="Account Icon">
+                                </div>
+                                <div class="nav-text">
+                                    <span class="fw-bold px-2">Login</span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<nav class="navbar third-navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#thirdNavbar"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="thirdNavbar">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold d-flex justify-content-around w-100 pe-5 me-5">
+                <li class="nav-item me-5">
+                    <a class="nav-link text-white" href="#">
+                        Men
+                    </a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link text-white" href="#">
+                        Women
+                    </a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link text-white" href="#">
+                        Unisex
+                    </a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link text-white" href="#">
+                        Kids
+                    </a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link text-white" href="#">
+                        Best Sellers
+                    </a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link text-white" href="#">
+                        New Arrivals
+                    </a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link text-danger" href="#">
+                        Offers
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="cart-wrapper" *ngIf="openedCart">
+    <div class="cart-panel ms-auto p-5 bg-white h-100">
+        <div class="close-btn-wrapper text-end pb-2">
+            <a (click)="openedCart = false" class="crs-pnt text-dark text-decoration-none">
+                <img src="../../assets/close-icon.png" alt="Close Cart">
+            </a>
+        </div>
+        <h3 class="text-center pb-4 text-mine-secondary fw-bold">My Cart</h3>
+        <div class="cart-main" *ngIf="cartItems.length > 0">
+            <h5 class="fw-bold pb-4">Cart Summary</h5>
+            <div class="cart-item rounded rounded-2 p-2" *ngFor="let cartItem of cartItems">
+                <div class="d-flex align-items-center">
+                    <div class="item-img-wrapper">
+                        <img src="../../assets/cart-product-img.png" alt="Product Image" class="rounded-mine">
+                    </div>
+                    <div class="item-info-wrapper px-4">
+                        <p class="fw-bold p-0 m-0">
+                            {{ cartItem.title }}
+                        </p>
+                        <p class="p-0 m-0 py-2">Quantity: {{ cartItem.quantity }}</p>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center text-mine-secondary">
+                                <h5 class="m-0 p-0 fw-bold">{{ cartItem.after_price }}</h5>
+                                <h6 class="m-0 p-0 px-2">LE</h6>
+                            </div>
+                            <a (click)="removeCartItem(cartItem)"
+                                class="fw-bold bg-mine-primary crs-pnt text-decoration-none text-dark px-3 py-1 rounded-pill">Remove</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="text-center fw-bold py-4">Total: {{ cartItems[0].after_price * cartItems[0].quantity }} LE</h4>
+            <div class="row justify-content-evenly">
+                <div class="col-md-6 p-2">
+                    <a href=""
+                        class="d-inline-block w-100 text-center fw-bold bg-mine-primary text-decoration-none text-dark py-3 rounded-pill">Review
+                        Cart</a>
+                </div>
+                <div class="col-md-6 p-2">
+                    <a href=""
+                        class="d-inline-block w-100 text-center fw-bold bg-mine-secondary text-decoration-none text-white py-3 rounded-pill">Complete
+                        Checkout</a>
+                </div>
+            </div>
+        </div>
+        <p *ngIf="cartItems.length == 0" class="lead py-5 text-center">No Products Added Yet!</p>
+    </div>
+</section>
